@@ -1,0 +1,55 @@
+.signup{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: url('https://source.unsplash.com/random?movies&squarish') no-repeat fixed center;
+}
+
+.form{
+    background-color: white;
+    border-radius: 7.5px;
+    opacity: .85;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    display:block
+}
+
+label>*{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+
+input{
+    border: none;
+    padding: 2.5%;
+    /* background-color: white; */
+}
+
+
+input:focus{
+    outline-color: rgb(26, 99, 209);
+}
+.AlreadyAccountExist{
+    padding-top: 10%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: 5px solid black;
+}
+form>*{
+    padding: 10%;
+    justify-content: center;
+}

@@ -1,0 +1,52 @@
+.navbar{
+    /* position: sticky; */
+    /* top: 0px; */
+    height: 5vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    text-align: center;
+}
+
+.logoName{
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleSearch{
+    flex: 0.4;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.middleSearch>button>input{
+    outline: none;
+    width: 95%;
+}
+
+.middleSearch>button{
+    display: flex;
+    background: white;
+    color: black;
+    padding: 2%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+} 
+
+.profileControls{
+    margin-left: 5%;
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2%;
+}
