@@ -4,7 +4,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import CloseIcon from '@mui/icons-material/Close';
 
 function Card({ movieObj }) {
-  // if(Object.keys(movieObj).length === 0) return;
+  if(Object.keys(movieObj).length === 0) return;
   const title = movieObj.Title;
   const YOR = movieObj.Year;
   const watchTime = movieObj.Runtime;

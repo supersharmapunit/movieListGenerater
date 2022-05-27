@@ -6,13 +6,8 @@ import { useUserAuth } from "../context/UserAuthContext";
 import companyLogo from '../resources/favicon-16x16.png'
 import SearchIcon from '@mui/icons-material/Search';
 
-export function shouldContinue(flag){
-    return flag;
-}
-
 export default function Navbar({setMovieObj, movieObj}) {
     const [search, setSearch] = useState("");
-    const [isSafeToContinue, setIsSafeToContinue] = useState(false);
     const { logOut, user } = useUserAuth();
     const navigate = useNavigate();
     const handleLogout = async () => {
@@ -39,13 +34,9 @@ export default function Navbar({setMovieObj, movieObj}) {
                 let apires = await fetch(apiKey)
                 let jres = await apires.json()
                 setMovieObj(jres);
-                setIsSafeToContinue(true);
-                shouldContinue(isSafeToContinue);
             } catch (error) {
                 console.log(error);
-                setMovieObj({})
-                setIsSafeToContinue(false);
-                shouldContinue(isSafeToContinue);
+                setMovieObj({});
             }
           }, 1200)
       

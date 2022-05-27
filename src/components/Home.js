@@ -2,7 +2,6 @@ import React,{useState} from "react";
 import Navbar from "./Navbar";
 import './Home.css'
 import Card from './Card'
-import { shouldContinue } from './Navbar'
 
 const Home = () => {
   
@@ -11,7 +10,7 @@ const Home = () => {
   return (
     <div className="home">
       <Navbar className="navbar" movieObj={movieObj} setMovieObj={setMovieObj} />
-      { !shouldContinue ? <></> :
+      { Object.keys(movieObj).length === 0 ? <></> :
       <Card movieObj={movieObj} />}
     </div>
   );
